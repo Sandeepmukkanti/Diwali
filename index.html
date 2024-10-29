@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/736x/b6/9b/07/b69b07e91ee02bba096d75ed7cb2981b.jpg");
+            /* background-repeat: no-repeat; */
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+        }
+        .title{
+            color:green;
+        }
+        .parent-conatiner{
+            background-color: white;
+            border-radius: 20px;
+            width:30%;
+            padding:2%;
+            text-align:center;
+            margin:auto;
+            margin-top:2%;
+        }
+        .form-field{
+            margin:10px;
+        }
+        .form-field input,.frm-button{
+            padding:10px;
+            width:80%;
+        }
+
+        @media(max-width:430px){
+            .parent-conatiner{
+                width:80%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<!-- <div class=""> -->
+    <form class="parent-conatiner" action="login.html">
+        <!-- here the action attribut it will direct us to the required page -->
+        <h2 class="title">Registration Form</h2>
+        <div class="form-field">
+        <!-- <label>user name:</label><br> -->
+        <input type="text" name="text" placeholder="enter your user name" required ><br><br>
+    </div>
+    <div class="form-field">
+        <!-- <label>user email:</label><br> -->
+        <input type="email" name="text" placeholder="enter your user name" required ><br><br>
+</div>
+    <div class="form-field">
+        <!-- <label>password:</label><br> -->
+        <input type="password" name="password" placeholder="enter your password" required ><br><br>
+    </div>
+
+    <div class="form-field">
+        <!-- <label>conform password:</label><br> -->
+        <input type="password" name="password" placeholder="enter your password" required ><br><br>
+    </div>
+      <div class="form-field">
+        <!-- <label>phone:</label><br> -->
+        <input type="phone" name="phone" placeholder="enter your phone number" required ><br><br> 
+       <!-- here name attribute is used to connect in the api sever we use name -->
+ </div>
+
+       <button class="frm-button" >Register</button>
+      <p>
+        Already have an account
+        <a href="login.html">Login</a>
+        </p>
+    </form>
+    <!-- </div> -->
+</body>
+</html>

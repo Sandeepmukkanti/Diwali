@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .image-container img{
+                width:15%;
+        }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <h1>Happy Diwali</h1>
+
+    <div class="diwali-content">
+
+        Diwali - The Festival of Lights
+
+Diwali, also known as Deepavali, is one of India's most widely celebrated festivals, symbolizing the triumph of light over darkness and good over evil. This joyous festival is marked by lighting diyas (oil lamps), decorating homes with vibrant rangolis, and setting off colorful fireworks.
+
+People come together to worship the goddess Lakshmi, the deity of wealth and prosperity, seeking her blessings for the upcoming year. Families and friends share sweets, exchange gifts, and partake in feasts, making Diwali a time of unity, gratitude, and celebration.
+
+Diwali reminds us to dispel the darkness of ignorance and spread the light of kindness and compassion.
+
+    </div>
+    <div class="image-container">
+        <img src="https://th.bing.com/th/id/OIP.RR5ijwfhB0fyDwvk8JHJKwHaF7?rs=1&pid=ImgDetMain" alt="">
+        <img src="https://th.bing.com/th/id/OIP.cMAk_9o9TGtoppe9ymE3oAHaHa?rs=1&pid=ImgDetMain" alt="">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/246/604/non_2x/vector-abstract-shiny-beautiful-diwali-background.jpg" alt="">
+        <img src="https://th.bing.com/th/id/OIP.n9lS-svPln2grWQfUnVYiAAAAA?w=360&h=360&rs=1&pid=ImgDetMain" alt="">
+        <img src="https://www.pngplay.com/wp-content/uploads/7/Diwali-Crackers-Transparent-Background.png" alt="">
+
+
+    </div>
+<marquee behaviour="" >
+    <img src=""
+</marquee>
+</body>
+<script>
+    function launchConfetti() {
+    const duration = 7 * 1000; // 10 seconds
+    const end = Date.now() + duration;
+    const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+    (function frame() {
+        confetti({
+            particleCount: 6, // Reduced number of particles
+            startVelocity: 80,
+            spread: 450,
+            ticks: 190,
+            origin: { x: 0.5, y: 0.5 }, // Start from top center
+            colors: colors,
+        });
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
+window.onload = function() {
+    launchConfetti();
+}
+</script>
+
+</html>
